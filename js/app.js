@@ -1,11 +1,14 @@
 import { loadSettings } from './store.js';
 import * as timer from './timer.js';
 import { mmss, dateLabel } from './util.js';
+import { initPWA } from './pwa.js';
 import * as timerView from './views/timer.js';
 import * as todayView from './views/today.js';
 import * as listView from './views/list.js';
 import * as recordsView from './views/records.js';
 import * as settingsView from './views/settings.js';
+
+initPWA();
 
 const views = {
   timer: timerView,
